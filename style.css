@@ -1,0 +1,153 @@
+/* 
+COLORS->
+
+background: rgba(252,208,0,255) 
+
+card background: rgba(255,255,255,255)
+
+horizontal line: rgba(251,251,251,255)
+
+Price Container: rgba(245,251,255,255)
+
+added tax: rgba(75,77,255,255)
+
+link: link, visited: rgba(87,123,238,255)
+
+link: hover, active: rgba(75,77,255,255) 
+
+
+*/
+
+* {
+  /* resetting all margins and padding beforehand */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* CARD GRID */
+.cards {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+  justify-items: center;
+  background-color: rgba(252, 208, 0, 255);
+}
+
+/* INDIVIDUAL CARDS */
+.card {
+  max-width: 15rem;
+  margin: 0.1rem 0.4rem;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-heading {
+  font-weight: 700;
+}
+
+.horizontal-line {
+  background-color: rgba(251, 251, 251, 255);
+  content: none;
+  margin: 1.2rem 0;
+  padding: 0.05rem;
+}
+
+.price-container {
+  background-color: rgba(245, 251, 255, 255);
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.starting-text {
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.rupee {
+  font-size: 2rem;
+  padding-top: 0.3rem;
+  /* top: 0.3rem;
+  left: 2.8rem; */
+  /* change positioning during reponsiveness */
+}
+
+.rupee,
+.cost {
+  font-weight: 700;
+}
+
+.cost {
+  font-size: 3rem;
+}
+
+.added-tax {
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+  color: rgba(75, 77, 255, 255);
+}
+
+.card-text {
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.card-main {
+  margin-bottom: 3rem;
+}
+
+.link:link,
+.link:visited {
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(87, 123, 238, 255);
+}
+
+.link:hover,
+.link:active {
+  color: rgba(75, 77, 255, 255);
+}
+
+.card-plc {
+  overflow: hidden;
+  position: relative;
+}
+
+.new-tag {
+  font-size: 1rem;
+  padding: 0.1rem 8rem;
+  background-color: rgba(252, 208, 0, 255);
+  position: absolute;
+  top: 0.6rem;
+  left: -7.5rem;
+  transform: rotate(-45deg);
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  background-color: red;
+}
