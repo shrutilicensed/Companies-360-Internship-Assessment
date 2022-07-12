@@ -1,0 +1,12 @@
+/* 1440px = 90rem */
+@media (max-width: 90rem) {
+  .cards {
+    flex-wrap: wrap;
+  }
+}
+/* 681px = 42.5rem*/
+@media (max-width: 42.5rem) {
+  .card {
+    max-width: 20rem;
+  }
+}
